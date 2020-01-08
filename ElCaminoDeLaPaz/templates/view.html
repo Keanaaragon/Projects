@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>View post</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        input {
+            width: -webkit-fill-available;
+        }
+        .submit {
+            width: unset;
+        }
+        header h1 {
+            max-width: 50%;
+            display:inline-block;
+        }
+        header a {
+            width: 5%;
+            display:inline-block;
+            text-align: end;
+        }
+        .margin {
+            margin-left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello {{session['first_name']}}! These are the post details!</h1>
+        <a href="/wall">Dashboard</a>
+        <a href="/logout">Logout</a>
+    </header>
+    <content class="view">
+        <h2>{{postinfo[0]['title']}}</h2>
+        <div>
+            <p>{{postinfo[0]['description']}}</p>
+            <p>Location: {{postinfo[0]['location']}}</p>
+            <p>Posted by: {{name[0]['first_name']}}</p>
+            <p>Posted on: {{postinfo[0]['created_at']}}</p>
+        </div>
+        <a href="/add_to_do/{{postinfo[0]['post_id']}}">Add to my posts</a>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .btn.btn-outline-info{
+            margin: 5px;
+        }
+        .btn.btn-sm.btn-outline-success{
+            margin: 10px;
+            width:80px;
+            height: 40px;
+        }
+        a{
+            text-emphasis: none;
+        }
+        .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+        }
+      }
+      img{
+          opacity: .9;
+          margin: 20px;
+      }
+      body{
+        background-image: url("static/img/view.png");
+        height: 1000px;
+        background-repeat: no-repeat; 
+        background-size: cover;
+      }
+      p, h2{
+          color: black;
+      }
+      .col-lg-4{
+        background-color: aliceblue;
+        opacity: .9;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="div-inline">
+            <a class="navbar-brand" href="/">A Path to Peace</a>
+                <a href="/mytracks" class="btn btn-outline-info" tabindex="-1" role="button">My Tracks</a>
+                <a href="/trails" class="btn btn-outline-info" tabindex="-1" role="button">Trails</a>
+                <a href="/events" class="btn btn-outline-info" tabindex="-1" role="button">Events</a>
+                <a href="/rest_bar" class="btn btn-outline-info" tabindex="-1" role="button">Resturants</a>
+            </div>
+        <div>
+            <a href="/loginpage" class="btn btn-outline-info" tabindex="-1" role="button">Sign Up</a>
+            <a href="/loginpage" class="btn btn-outline-info" tabindex="-1" role="button">Login</a>
+        </div>
+    </nav>
+    <div class="mx-auto" style="width: 900px;">
+        <h1 class="display-1">El Camino De La Paz</h1>
+        <img src="static/img/maps.png" alt="map" width="800px;" height="300px;">
+    </div>
+
+
+
+    <main role="main">
+        
+            <div class="container marketing">
+                    <!-- Three columns of text below the carousel -->
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="static/img/view.png"><text x="50%" y="50%" fill="#7789" dy=".3em">140x140</text></svg>
+                        <h2>The Trail</h2>
+                        <p>Enjoy a rejuvenating walk along the beautiful Californian coast. The trail starts at Pleasure Point and ends in Moss Landing. </p>
+                        <p><a class="btn btn-secondary" href="/trails" role="button">More Details &raquo;</a></p>
+                      </div><!-- /.col-lg-4 -->
+                      <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                        <h2>What Popular On The Trail</h2>
+                        <p>Local eateries, tasty taps, otter on coast, and many more fun experiences to descover.</p>
+                        <p><a class="btn btn-secondary" href="/events" role="button">More Details &raquo;</a></p>
+                      </div><!-- /.col-lg-4 -->
+                      <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                        <h2>Share Your Experience With Others</h2>
+                        <p>Our goal is to join the community of the west coast with people all over the wolrd. Together we can enjoy walks on the beach, relax with great company and unwind from a stress.</p>
+                        <p><a class="btn btn-secondary" href="/uploading" role="button">Upload Here &raquo;</a></p>
+                      </div><!-- /.col-lg-4 -->
+                    </div><!-- /.row -->
+            
+          <hr class="featurette-divider">
+      
+        <footer class="container">
+          <p class="float-right"><a href="#">Back to top</a></p>
+          <p>© 2019 J.K., Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+      </main>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

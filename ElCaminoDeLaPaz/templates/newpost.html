@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Job</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        header h2 {
+            max-width: 50%;
+            display:inline-block;
+        }
+        header a {
+            width: 5%;
+            display:inline-block;
+            text-align: end;
+        }
+        .margin {
+            margin-left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Hello {{session['first_name']}}! Create a post!</h2>
+        <a href="/logout">Log Out</a>
+        {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+            {% if messages %}                            <!-- check if there are any messages -->
+                {% for message in messages %}            <!-- loop through the messages -->
+                    <p style= color:red>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </header>
+    <content>
+        <form action="/add_job" method="POST">
+        <table class="table">
+            <tr>
+                <td>Description:</td>
+                <td><input type="text" name="description"></td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td><input type="text" name="location"></td>
+            </tr>
+            <tr>
+                <td><a href="/wall">Cancel</a><input type='submit' value='Submit'></td>
+            </tr>
+        </table>
+        </form>
+    </content>
+</body>
+</html>
